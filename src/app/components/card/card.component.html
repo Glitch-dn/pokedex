@@ -1,1 +1,21 @@
-<p>card works!</p>
+@if(pokemon){
+<div *ngIf="pokemon" class="card" style="width: 18rem">
+  <img
+    [src]="'assets/images/' + padId(pokemon.id) + '.png'"
+    class="card-img-top"
+    [alt]="pokemon.name.english"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ pokemon.name.english }}</h5>
+    <p class="card-text">{{ pokemon.name.japanese }}</p>
+    <p class="card-text">ID: {{ pokemon.id }}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Type: {{ pokemon.type.join(", ") }}</li>
+    <li class="list-group-item">HP: {{ pokemon.base.HP }}</li>
+    <li class="list-group-item">Attack: {{ pokemon.base.Attack }}</li>
+    <li class="list-group-item">Defense: {{ pokemon.base.Defense }}</li>
+    <li class="list-group-item">Speed: {{ pokemon.base.Speed }}</li>
+  </ul>
+</div>
+}

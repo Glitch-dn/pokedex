@@ -1,1 +1,5 @@
-<p>pack works!</p>
+<div class="d-flex flex-wrap gap-4 justify-content-center">
+  @for(p of pack; track p.id){
+  <app-card [pokemon]="p"></app-card>
+  }
+</div>

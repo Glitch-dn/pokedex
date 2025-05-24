@@ -1,1 +1,41 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+.bug{
+    border-color: darkolivegreen !important;
+}
+.normal{
+    border-color: rgb(117, 117, 117) !important;
+}
+.poison{
+    border-color: rgb(195, 255, 0) !important;
+}
+.ground{
+    border-color: saddlebrown !important;
+}
+.fight{
+    border-color: sandybrown !important;
+}
+.psy{
+    border-color: rgb(255, 0, 255) !important;
+}
+.rock{
+    border-color: brown!important;
+}
+.ghost{
+    border-color: darkslategray !important;
+}
+.ice{
+    border-color: lightblue !important;
+}
+.dragon{
+    border-color: goldenrod !important;
+}
+.fairy{
+    border-color: lightpink !important;
+}
+.dark{
+    border-color: darkslateblue !important;
+}
+.steel{
+    border-color: silver !important;
+}

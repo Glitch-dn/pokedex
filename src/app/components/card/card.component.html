@@ -1,5 +1,28 @@
 @if(pokemon){
-<div *ngIf="pokemon" class="card" style="width: 18rem">
+<div
+  *ngIf="pokemon"
+  class="card"
+  style="width: 18rem; border: 5px solid transparent"
+  [ngClass]="{
+    'border-success': pokemon.type.includes('Grass'),
+    'border-danger': pokemon.type.includes('Fire'),
+    'border-info': pokemon.type.includes('Water'),
+    bug: pokemon.type.includes('Bug'),
+    normal: pokemon.type.includes('Normal'),
+    poison: pokemon.type[0].includes('Poison'),
+    'border-warning': pokemon.type.includes('Electric'),
+    ground: pokemon.type[0].includes('Ground'),
+    fight: pokemon.type[0].includes('Fighting'),
+    psy: pokemon.type[0].includes('Psychic'),
+    rock: pokemon.type[0].includes('Rock'),
+    ghost: pokemon.type[0].includes('Ghost'),
+    ice: pokemon.type[0].includes('Ice'),
+    dragon: pokemon.type[0].includes('Dragon'),
+    fairy: pokemon.type[0].includes('Fairy'),
+    dark: pokemon.type[0].includes('Dark'),
+    steel: pokemon.type[0].includes('Steel')
+  }"
+>
   <img
     [src]="'assets/images/' + padId(pokemon.id) + '.png'"
     class="card-img-top"

@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { PackComponent } from './components/pack/pack.component';
 import { Card } from './models/cardModel';
 import { HttpClient } from '@angular/common/http';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PackComponent],
+  imports: [RouterOutlet, PackComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

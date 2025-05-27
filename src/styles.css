@@ -1,5 +1,9 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+input:focus{
+    box-shadow: goldenrod 0px 0px 0px 0.25rem !important;
+}
+
 .bug{
     border-color: darkolivegreen !important;
 }

@@ -1,0 +1,50 @@
+@if(pokemon){
+<div
+  class="card"
+  style="width: 20rem"
+  [ngClass]="{
+    grass: pokemon.type[0] == 'Grass',
+    fire: pokemon.type[0] == 'Fire',
+    water: pokemon.type[0] == 'Water',
+    bug: pokemon.type[0] == 'Bug',
+    normal: pokemon.type[0] == 'Normal',
+    poison: pokemon.type[0] == 'Poison',
+    electric: pokemon.type[0] == 'Electric',
+    ground: pokemon.type[0] == 'Ground',
+    fairy: pokemon.type[0] == 'Fairy',
+    fighting: pokemon.type[0] == 'Fighting',
+    psychic: pokemon.type[0] == 'Psychic',
+    rock: pokemon.type[0] == 'Rock',
+    ghost: pokemon.type[0] == 'Ghost',
+    ice: pokemon.type[0] == 'Ice',
+    dragon: pokemon.type[0] == 'Dragon',
+    dark: pokemon.type[0] == 'Dark',
+    steel: pokemon.type[0] == 'Steel',
+  }"
+>
+  <img
+    [src]="
+      'pokemon.json/images/' +
+      (pokemon.id < 10 ? '00' : pokemon.id < 100 ? '0' : '') +
+      pokemon.id +
+      '.png'
+    "
+    class="card-img-top"
+    alt="{{ pokemon.name.english }} image"
+    style="display: block; width: 90%; margin: 0 auto"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ pokemon.name.english }}</h5>
+    <h6>{{ pokemon.name.japanese }}</h6>
+    <p class="card-text">ID: {{ pokemon.id }}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ pokemon.type.join(", ") }}</li>
+  </ul>
+  <div class="card-body">
+    <button type="button" class="btn" style="display: block; width: 100%">
+      Details
+    </button>
+  </div>
+</div>
+}

@@ -4,7 +4,7 @@ export interface Pokemon {
   id: number
   name: PkmName
   type: string[]
-  stat: Stat
+  base: Stat
 }
 
 export interface PkmName {

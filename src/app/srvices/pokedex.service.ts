@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ItemsResponse } from '../models/item';
-import { PokedexResponse } from '../models/pokedex';
+import { PokedexResponse, Pokemon } from '../models/pokedex';
 import { MoveResponse } from '../models/move';
 import { TypePkm } from '../models/type';
 
@@ -11,6 +11,8 @@ import { TypePkm } from '../models/type';
 })
 export class PokedexService {
   private basePath = '/pokemon.json/';
+
+  selectedPokemon:Pokemon[] = [];
 
   constructor(private http: HttpClient) {}
 

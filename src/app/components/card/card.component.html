@@ -20,6 +20,7 @@
     dragon: pokemon.type[0] == 'Dragon',
     dark: pokemon.type[0] == 'Dark',
     steel: pokemon.type[0] == 'Steel',
+    flying: pokemon.type[0] == 'Flying',
   }"
 >
   <img
@@ -42,7 +43,12 @@
     <li class="list-group-item">{{ pokemon.type.join(", ") }}</li>
   </ul>
   <div class="card-body">
-    <button type="button" class="btn" style="display: block; width: 100%">
+    <button
+      type="button"
+      class="btn"
+      style="display: block; width: 100%"
+      (click)="showDetails(pokemon)"
+    >
       Details
     </button>
   </div>

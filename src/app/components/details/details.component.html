@@ -1,1 +1,44 @@
-<p>details works!</p>
+<div class="my-5 mx-1">
+  @for (p of pService.selectedPokemon; track $index) {
+  <div
+    class="card bg-dark text-light"
+    style="width: 17rem; border: 1px solid red"
+  >
+    <img
+      [src]="
+        'pokemon.json/images/' +
+        (p.id < 10 ? '00' : p.id < 100 ? '0' : '') +
+        p.id +
+        '.png'
+      "
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ p.name.english }}</h5>
+      <p class="card-text">{{ p.name.japanese }}</p>
+      <p class="card-text">{{ p.name.chinese }}</p>
+      <p class="card-text">{{ p.name.french }}</p>
+      <p class="card-text">Type: {{ p.type }}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item bg-dark text-light">HP: {{ p.base.HP }}</li>
+      <li class="list-group-item bg-dark text-light">
+        Attack: {{ p.base.Attack }}
+      </li>
+      <li class="list-group-item bg-dark text-light">
+        Defense: {{ p.base.Defense }}
+      </li>
+      <li class="list-group-item bg-dark text-light">
+        Speed: {{ p.base.Speed }}
+      </li>
+      <li class="list-group-item bg-dark text-light">
+        Sp. Attack: {{ p.base["Sp. Attack"] }}
+      </li>
+      <li class="list-group-item bg-dark text-light">
+        Sp. defense: {{ p.base["Sp. Defense"] }}
+      </li>
+    </ul>
+  </div>
+  }
+</div>

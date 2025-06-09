@@ -2,6 +2,9 @@
     color: white;
     text-shadow: 1px 1px 2px black;
 }
+.flying{
+    border: 4px solid rgb(120, 171, 203);
+}
 .grass{
     border: 4px solid green;
 }
@@ -52,6 +55,12 @@
 }
 .steel{
     border: 4px solid rgb(204, 204, 204);
+}
+.flying .btn {
+    background-color: rgb(120, 171, 203);
+}
+.flying .btn:hover {
+    background-color: rgb(100, 150, 180); /* Less saturated blue */
 }
 .grass .btn {
     background-color: green;

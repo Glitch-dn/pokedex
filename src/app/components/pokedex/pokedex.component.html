@@ -1,10 +1,18 @@
-<div class="px-4" style="margin-top: 125px">
+<div>
   <div class="row gap-2">
     <app-pack
-      class="col-10 bg-dark"
+      class="col-9 bg-dark"
       [fullPokemon]="pokedex"
       [fullTypes]="types"
-      style="border-radius: 15px"
+      style="
+        border-radius: 15px;
+        position: fixed;
+        left: 0.5%;
+        top: 133px;
+        width: 68.5%;
+        height: 86vh;
+        overflow-y: auto;
+      "
     ></app-pack>
     <app-details
       class="col bg-dark"
@@ -12,9 +20,9 @@
         border-radius: 15px;
         position: fixed;
         right: 0.5%;
-        top: 12.5%;
-        width: 16%;
-        height: 45vw;
+        top: 133px;
+        width: 30%;
+        height: 86vh;
       "
     ></app-details>
   </div>

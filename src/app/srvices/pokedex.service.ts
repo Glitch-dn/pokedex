@@ -13,7 +13,9 @@ export class PokedexService {
   private basePath = '/pokemon.json/';
 
   selectedPokemon:Pokemon[] = [];
+  selectedDirectory:string = '';
 
+  
   constructor(private http: HttpClient) {}
 
   getItems(): Observable<ItemsResponse> {

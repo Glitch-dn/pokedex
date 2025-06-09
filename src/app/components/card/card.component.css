@@ -2,59 +2,77 @@
     color: white;
     text-shadow: 1px 1px 2px black;
 }
-.flying{
-    border: 4px solid rgb(120, 171, 203);
+.flying {
+    box-shadow: 0 0 30px rgb(120, 171, 203);
+    border: 1px solid rgb(120, 171, 203);
 }
-.grass{
-    border: 4px solid green;
+.grass {
+    box-shadow: 0 0 30px green;
+    border: 1px solid green;
 }
-.fire{
-    border: 4px solid red;
+.fire {
+    box-shadow: 0 0 30px red;
+    border: 1px solid red;
 }
-.water{
-    border: 4px solid rgb(63, 185, 226);
+.water {
+    box-shadow: 0 0 30px rgb(63, 185, 226);
+    border: 1px solid rgb(63, 185, 226);
 }
-.bug{
-    border: 4px solid olive;
+.bug {
+    box-shadow: 0 0 30px olive;
+    border: 1px solid olive;
 }
-.normal{
-    border: 4px solid rgb(141, 141, 141);
+.normal {
+    box-shadow: 0 0 30px rgb(141, 141, 141);
+    border: 1px solid rgb(141, 141, 141);
 }
-.poison{
-    border: 4px solid purple;
+.poison {
+    box-shadow: 0 0 30px purple;
+    border: 1px solid purple;
 }
-.electric{
-    border: 4px solid gold;
+.electric {
+    box-shadow: 0 0 30px gold;
+    border: 1px solid gold;
 }
-.ground{
-    border: 4px solid saddlebrown;
+.ground {
+    box-shadow: 0 0 30px saddlebrown;
+    border: 1px solid saddlebrown;
 }
-.fairy{
-    border: 4px solid pink;
+.fairy {
+    box-shadow: 0 0 30px pink;
+    border: 1px solid pink;
 }
-.fighting{
-    border: 4px solid darkred;
+.fighting {
+    box-shadow: 0 0 30px darkred;
+    border: 1px solid darkred;
 }
-.psychic{
-    border: 4px solid magenta;
+.psychic {
+    box-shadow: 0 0 30px magenta;
+    border: 1px solid magenta;
 }
-.rock{
-    border: 4px solid rgb(114, 114, 63);
+.rock {
+    box-shadow: 0 0 30px rgb(114, 114, 63);
+    border: 1px solid rgb(114, 114, 63);
 }
-.ghost{
-    border: 4px solid rgb(95, 75, 101);
+.ghost {
+    box-shadow: 0 0 30px rgb(95, 75, 101);
+    border: 1px solid rgb(95, 75, 101);
 }
-.ice{
-    border: 4px solid lightblue;
+.ice {
+    box-shadow: 0 0 30px lightblue;
+    border: 1px solid lightblue;
 }
-.dragon{
-    border: 4px solid goldenrod;
+.dragon {
+    box-shadow: 0 0 30px goldenrod;
+    border: 1px solid goldenrod;
 }
-.dark{
-    border: 4px solid rgb(0, 0, 0);
+.dark {
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
 }
-.steel{
-    border: 4px solid rgb(204, 204, 204);
+.steel {
+    box-shadow: 0 0 30px rgb(204, 204, 204);
+    border: 1px solid rgb(204, 204, 204);
 }
 .flying .btn {
     background-color: rgb(120, 171, 203);

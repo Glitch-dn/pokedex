@@ -1,5 +1,22 @@
 <div>
   <div class="row gap-2">
+    @if (pokedexService.selectedDirectory == 'bag') {
+    <app-bag
+      [fullItems]="items"
+      class="col-9 bg-dark"
+      style="
+        border-radius: 15px;
+        position: fixed;
+        left: 0.5%;
+        top: 133px;
+        width: 68.5%;
+        height: 86vh;
+        overflow-y: auto;
+      "
+    ></app-bag>
+    } @else if (pokedexService.selectedDirectory == 'moves') {
+    <div style="width: 100px; height: 200px; background-color: black">mtmn</div>
+    } @else {
     <app-pack
       class="col-9 bg-dark"
       [fullPokemon]="pokedex"
@@ -14,6 +31,8 @@
         overflow-y: auto;
       "
     ></app-pack>
+    }
+
     <app-details
       class="col bg-dark"
       style="

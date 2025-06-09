@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PokedexService } from '../../srvices/pokedex.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,5 +10,11 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   home(){
     window.location.reload();
+  }
+
+  pService : PokedexService = inject(PokedexService);
+
+  changeDirectory(d:string){
+    return this.pService.selectedDirectory = d;
   }
 }

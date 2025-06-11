@@ -16,5 +16,6 @@ export class NavbarComponent {
 
   changeDirectory(d:string){
     return this.pService.selectedDirectory = d;
+    return this.pService.selectedPokemon = [];
   }
 }
